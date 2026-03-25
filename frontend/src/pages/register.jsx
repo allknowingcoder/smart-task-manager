@@ -1,6 +1,7 @@
 import { useState } from "react";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
+import "./login.css";
 
 function Register() {
   const [form, setForm] = useState({
@@ -31,7 +32,8 @@ function Register() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <div className="card">
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -49,6 +51,7 @@ function Register() {
         <button type="submit">Register</button>
       </form>
     </div>
+  </div>
   );
 }
 
