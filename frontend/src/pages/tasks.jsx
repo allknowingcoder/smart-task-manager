@@ -12,13 +12,13 @@ function Tasks() {
     deadline: "",
   });
 
-  // ✅ FIX: useCallback added
+  
   const fetchTasks = async () => {
     const res = await API.get("/tasks");
     setTasks(res.data);
   };
 
-  // ✅ Create task
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     await API.post("/tasks", form);
@@ -26,19 +26,18 @@ function Tasks() {
     fetchTasks();
   };
 
-  // ✅ Delete task
+  
   const deleteTask = async (id) => {
     await API.delete(`/tasks/${id}`);
     fetchTasks();
   };
 
-  // ✅ Complete task
+  
   const completeTask = async (id) => {
     await API.put(`/tasks/${id}`, { status: "completed" });
     fetchTasks();
   };
 
-  // ✅ Correct useEffect
   useEffect(() => {
     const fetchData = async () => {
       const res = await API.get("/tasks");
