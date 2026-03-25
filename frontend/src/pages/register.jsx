@@ -17,7 +17,14 @@ function Register() {
     try {
   await API.post("/auth/register", formData);
 } catch (err) {
-  alert(err.response.data.msg);
+  console.log(err);
+
+  const message =
+    err.response?.data?.msg ||
+    err.message ||
+    "Something went wrong";
+
+  alert(message);
 }
 
     navigate("/");
