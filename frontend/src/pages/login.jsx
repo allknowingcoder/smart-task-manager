@@ -16,7 +16,8 @@ function Login() {
     navigate("/dashboard");
   };
   return (
-    <div>
+    <div className="container">
+      <div className = "card">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -31,8 +32,9 @@ function Login() {
         />
         <button type="submit">Login</button>
       </form>
-      <span>New User</span><Link to="/register">Register</Link>
+      <span>New User</span><Link className="link" to="/register">Register</Link>
     </div>
+  </div>
   );
 }
 
