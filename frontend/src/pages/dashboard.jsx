@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
-import NAVBAR from "../components/navbar";
+import Navbar from "../components/navbar";
 import { useNavigate } from "react-router-dom";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
@@ -29,7 +29,7 @@ function Dashboard() {
 
   return (
     <>
-    <NAVBAR />
+    <Navbar />
     <div className="container">
       <h2>Dashboard</h2>
 
