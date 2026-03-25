@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 function Navbar() {
   return (
-    <div>
-      <Link to="/dashboard">Dashboard</Link> |<Link to="/tasks">Tasks</Link>
-      <button
+    <div className="navbar">
+      <Link className="links" to="/dashboard">Dashboard</Link> |<Link className="links" to="/tasks">Tasks</Link>
+      <h1 className="logo">Task Manager</h1>
+      <button className="logout-btn"
         onClick={() => {
           localStorage.removeItem("token");
           window.location.href = "/";
