@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
+import NAVBAR from "../components/navbar";
 import { useNavigate } from "react-router-dom";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
@@ -27,6 +28,8 @@ function Dashboard() {
   const pending = total - completed;
 
   return (
+    <>
+    <NAVBAR />
     <div className="container">
       <h2>Dashboard</h2>
 
@@ -62,6 +65,7 @@ function Dashboard() {
 
       <button onClick={() => navigate("/tasks")}>Go to Tasks</button>
     </div>
+    </>
   );
 }
 
