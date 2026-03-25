@@ -2,6 +2,7 @@ import { useState } from "react";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "./login.css";
 
 function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
