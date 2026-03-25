@@ -16,7 +16,7 @@ exports.register = async (req, res) => {
       return res.status(400).json({ msg: "User already exists" });
     }
 
-    const hashed = await bcrypt.hash(password, 10);
+    const hashed = await bycrypt.hash(password, 10);
 
     const user = await User.create({
       name,
@@ -40,7 +40,7 @@ if (!user) {
   return res.status(400).json({ msg: "User not found" });
 }
 
-const isMatch = await bcrypt.compare(password, user.password);
+const isMatch = await bycrypt.compare(password, user.password);
 
 if (!isMatch) {
   return res.status(400).json({ msg: "Invalid credentials" });
