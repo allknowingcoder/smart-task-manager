@@ -1,6 +1,7 @@
 import { useState } from "react";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -30,6 +31,7 @@ function Login() {
         />
         <button type="submit">Login</button>
       </form>
+      <span>New User</span><Link to="/register">Register</Link>
     </div>
   );
 }
