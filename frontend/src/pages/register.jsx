@@ -15,7 +15,7 @@ function Register() {
     e.preventDefault();
 
     try {
-  await API.post("/auth/register", formData);
+  await API.post("/auth/register", form);
 } catch (err) {
   console.log(err);
 
