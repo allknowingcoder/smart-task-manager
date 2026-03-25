@@ -1,0 +1,72 @@
+/* Full screen center */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.card h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* Inputs */
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Input focus */
+.card input:focus {
+  border-color: #3b82f6;
+}
+
+/* Button */
+.card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.card button:hover {
+  background: #2563eb;
+}
+
+/* Text */
+.card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Register link */
+.link {
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 500;
+}
