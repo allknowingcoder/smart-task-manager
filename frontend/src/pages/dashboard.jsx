@@ -45,7 +45,7 @@ function Dashboard() {
         </div>
       )}
 
-      <button onClick={() => navigate("/tasks")}>Go to Tasks</button>
+      <button className="task-btn" onClick={() => navigate("/tasks")}>Go to Tasks</button>
     </div>
   </div>
     </>
