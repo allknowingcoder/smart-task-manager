@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
-import NAVBAR from "../components/navbar";
+import Navbar from "../components/navbar";
 
 function Tasks() {
   const [tasks, setTasks] = useState([]);
@@ -50,7 +50,7 @@ function Tasks() {
 
   return (
     <>
-      <NAVBAR />
+      <Navbar />
     <div className="container">
       <h2>Tasks</h2>
 
