@@ -11,7 +11,10 @@
   font-size: 20px;
   font-weight: bold;
 }
-
+.links{
+  text-decoration: none;
+  color: white;
+}
 .logout-btn {
   background: red;
   color: white;
